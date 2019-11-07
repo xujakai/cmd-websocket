@@ -63,6 +63,7 @@ var homeTemplate = template.Must(template.New("").Parse(`
                 var d = document.createElement("div");
                 d.innerHTML = message;
                 output.appendChild(d);
+                output.scrollTop = output.scrollHeight;
             };
 
 
